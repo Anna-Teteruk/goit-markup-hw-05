@@ -462,6 +462,10 @@ a {
   max-width: 264px;
 }
 
+.footer-social-media {
+  margin-right: 80px;
+}
+
 .footer-s-m-text {
   font-weight: 500;
   color: #fff;
@@ -491,4 +495,297 @@ a {
 .s-m-link-foot:focus {
   background-color: #31d0aa;
 }
-/*....... FOOTER....... */
+
+.footer-subscribe {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.subscribe-field {
+  display: flex;
+  align-items: baseline;
+}
+
+.subscribe-text {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.input-email-subsc {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #2e2f42;
+  margin-right: 24px;
+  outline: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-email-subsc:hover,
+.input-email-subsc:focus {
+  border: 1px solid #31d0aa;
+}
+
+.input-email-subsc::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+  padding: 8px 16px;
+}
+
+.btn-subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 165px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+  background-color: #31d0aa;
+}
+
+.btn-text {
+  margin-right: 16px;
+}
+
+.icon-send {
+  fill: #fff;
+}
+
+/* .......MODAL....... */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 408px;
+  min-height: 584px;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fcfcfc;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop:not(.is-open) .modal {
+  transform: translate(-50%, -100%);
+}
+
+.button-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .btn-close {
+    fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.button-close:hover,
+.button-close:focus {
+  background-color: #404bbf;
+  border: none;
+}
+
+.button-close:hover .btn-close,
+.button-close:focus .btn-close {
+  fill: #fff;
+}
+
+.modal-text {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  padding-top: 72px;
+  margin-bottom: 16px;
+}
+
+.modal-form {
+  max-width: 360px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-box {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.modal-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.modal-input {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 100%;
+  min-height: 40px;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-icon {
+  fill: #2e2f42;
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus {
+  border: 1px solid #4d5ae5;
+}
+
+.modal-input:focus + .modal-icon {
+  fill: #4d5ae5;
+}
+
+.modal-textarea {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  outline: transparent;
+  margin-bottom: 16px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-textarea:focus {
+  border: 1px solid #4d5ae5;
+}
+
+.modal-textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  padding: 8px 16px;
+}
+
+.check-vector-blue {
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-check-text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: flex;
+  align-items: center;
+}
+
+.modal-checkbox:checked + .modal-check-text .check-vector-blue {
+  background-color: #404bbf;
+  border: 1px solid #404bbf;
+  fill: #f4f4fd;
+}
+
+.modal-check-link {
+  line-height: 1.33;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+  margin-left: 4px;
+}
+
+.modal-btn {
+  display: block;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 24px auto;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #404bbf;
+}
