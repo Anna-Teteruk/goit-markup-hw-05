@@ -739,12 +739,10 @@ a {
   margin-bottom: 24px;
 }
 
-.modal-checkbox-field {
-  display: inline-flex;
-  align-items: center;
-}
-
 .check-vector-blue {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   width: 16px;
