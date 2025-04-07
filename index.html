@@ -520,7 +520,7 @@
         <div class="footer-subscribe">
           <p class="subscribe-text">Subscribe</p>
           <form class="subscribe-field">
-            <label aria-label="subscribe-email">
+            <label aria-label="subscribe-email" class="subscr-label">
               <input
                 type="email"
                 name="subscribe-email"
@@ -530,8 +530,8 @@
             /></label>
 
             <button type="submit" class="btn-subscribe">
-              <p class="btn-text">Subscribe</p>
-              <svg class="icon-send" width="24" height="20">
+              Subscribe
+              <svg class="icon-send" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
@@ -591,24 +591,24 @@
               </svg>
             </div>
           </div>
-          <div class="modal-field">
-            <label class="modal-label" for="usercomment">Comment</label
+          <div class="modal-field modal-field-comment">
+            <label class="modal-label" for="user-comment">Comment</label
             ><textarea
               class="modal-textarea"
-              name="usercomment"
-              id="usercomment"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
-          <div>
+          <div class="modal-checkbox-field">
             <input
               type="checkbox"
-              name="policy"
-              id="policy"
+              name="user-privacy"
+              id="user-privacy"
               class="modal-checkbox visually-hidden"
               value="true"
             />
-            <label for="policy" class="modal-check-text"
+            <label for="user-privacy" class="modal-check-text"
               ><span class="check-vector-blue"
                 ><svg class="check-vector" width="10" height="8">
                   <use href="./images/icons.svg#icon-vector"></use></svg></span
